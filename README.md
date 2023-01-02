@@ -1,10 +1,10 @@
-#### MERNSTACK CRUD APP
+## MERNSTACK CRUD APP
 
 This is a simple MERN stack CRUD app. It is a simple app that allows you to add, edit, delete and view users.
 
-## use REST API and MongoDB to store data and React to build the front end.
+### use REST API and MongoDB to store data and React to build the front end.
 
-## How to use
+#### How to use
 
 1. Clone the repo
 2. Run `npm install` in the root directory
