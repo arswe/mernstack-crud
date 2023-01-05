@@ -1,12 +1,18 @@
 const mongoose = require('mongoose');
+const colors = require('colors');
+
+mongoose.set('strictQuery', false);
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI);
+    const conn = await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
 
-    console.log(`MongoDB Connected: ${conn.connection.host}`.cyan.underline);
+    console.log(colors.cyan.bold(`database connection successful!: ${conn.connection.host}`));
   } catch (error) {
-    console.log(error);
+    console.error(colors.underline.bold(`Error: ${error.message}`));
     process.exit(1);
   }
 };
