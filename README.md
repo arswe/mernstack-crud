@@ -1,4 +1,4 @@
-## MERNSTACK CRUD APP
+## MERNSTACK CRUD APP with authentication
 
 This is a simple MERN stack CRUD app. It is a simple app that allows you to add, edit, delete and view users.
 
